@@ -17,12 +17,14 @@ package com.google.maps.model;
 
 import java.io.Serializable;
 
-/** The northeast and southwest points that delineate the outer bounds of a map. */
+/**
+ * The northeast and southwest points that delineate the outer bounds of a map.
+ */
 public class Bounds implements Serializable {
 
-  private static final long serialVersionUID = 1L;
-  /** The northeast corner of the bounding box. */
-  public LatLng northeast;
-  /** The southwest corner of the bounding box. */
-  public LatLng southwest;
+	private static final long serialVersionUID = 1L;
+	/** The northeast corner of the bounding box. */
+	public LatLng northeast;
+	/** The southwest corner of the bounding box. */
+	public LatLng southwest;
 }

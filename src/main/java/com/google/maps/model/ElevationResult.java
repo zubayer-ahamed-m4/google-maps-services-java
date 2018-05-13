@@ -20,9 +20,9 @@ import java.io.Serializable;
 /** An Elevation API result. */
 public class ElevationResult implements Serializable {
 
-  private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-  public double elevation;
-  public LatLng location;
-  public double resolution;
+	public double elevation;
+	public LatLng location;
+	public double resolution;
 }

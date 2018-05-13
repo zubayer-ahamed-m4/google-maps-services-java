@@ -20,26 +20,29 @@ import java.io.Serializable;
 /**
  * The response from a Places Search request.
  *
- * <p>Please see <a
- * href="https://developers.google.com/places/web-service/search#PlaceSearchResponses">Places Search
- * Response</a> for more detail.
+ * <p>
+ * Please see <a href=
+ * "https://developers.google.com/places/web-service/search#PlaceSearchResponses">Places
+ * Search Response</a> for more detail.
  */
 public class PlacesSearchResponse implements Serializable {
 
-  private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-  /** The list of Search Results. */
-  public PlacesSearchResult results[];
+	/** The list of Search Results. */
+	public PlacesSearchResult results[];
 
-  /** Attributions about this listing which must be displayed to the user. */
-  public String htmlAttributions[];
+	/** Attributions about this listing which must be displayed to the user. */
+	public String htmlAttributions[];
 
-  /**
-   * A token that can be used to request up to 20 additional results. This field will be null if
-   * there are no further results. The maximum number of results that can be returned is 60.
-   *
-   * <p>Note: There is a short delay between when this response is issued, and when nextPageToken
-   * will become valid to execute.
-   */
-  public String nextPageToken;
+	/**
+	 * A token that can be used to request up to 20 additional results. This field
+	 * will be null if there are no further results. The maximum number of results
+	 * that can be returned is 60.
+	 *
+	 * <p>
+	 * Note: There is a short delay between when this response is issued, and when
+	 * nextPageToken will become valid to execute.
+	 */
+	public String nextPageToken;
 }

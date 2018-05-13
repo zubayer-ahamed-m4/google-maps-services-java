@@ -20,35 +20,36 @@ import java.io.Serializable;
 /**
  * A complete result from a Distance Matrix API call.
  *
- * @see <a
- *     href="https://developers.google.com/maps/documentation/distancematrix/#DistanceMatrixResponses">
- *     Distance Matrix Results</a>
+ * @see <a href=
+ *      "https://developers.google.com/maps/documentation/distancematrix/#DistanceMatrixResponses">
+ *      Distance Matrix Results</a>
  */
 public class DistanceMatrix implements Serializable {
 
-  private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-  /**
-   * Origin addresses as returned by the API from your original request. These are formatted by the
-   * geocoder and localized according to the language parameter passed with the request.
-   */
-  public final String[] originAddresses;
+	/**
+	 * Origin addresses as returned by the API from your original request. These are
+	 * formatted by the geocoder and localized according to the language parameter
+	 * passed with the request.
+	 */
+	public final String[] originAddresses;
 
-  /**
-   * Destination addresses as returned by the API from your original request. As with {@link
-   * #originAddresses}, these are localized if appropriate.
-   */
-  public final String[] destinationAddresses;
+	/**
+	 * Destination addresses as returned by the API from your original request. As
+	 * with {@link #originAddresses}, these are localized if appropriate.
+	 */
+	public final String[] destinationAddresses;
 
-  /**
-   * An array of elements, each of which in turn contains a status, duration, and distance element.
-   */
-  public final DistanceMatrixRow[] rows;
+	/**
+	 * An array of elements, each of which in turn contains a status, duration, and
+	 * distance element.
+	 */
+	public final DistanceMatrixRow[] rows;
 
-  public DistanceMatrix(
-      String[] originAddresses, String[] destinationAddresses, DistanceMatrixRow[] rows) {
-    this.originAddresses = originAddresses;
-    this.destinationAddresses = destinationAddresses;
-    this.rows = rows;
-  }
+	public DistanceMatrix(String[] originAddresses, String[] destinationAddresses, DistanceMatrixRow[] rows) {
+		this.originAddresses = originAddresses;
+		this.destinationAddresses = destinationAddresses;
+		this.rows = rows;
+	}
 }

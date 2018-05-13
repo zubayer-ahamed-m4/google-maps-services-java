@@ -20,20 +20,21 @@ import java.io.Serializable;
 /**
  * The operator of a line.
  *
- * <p>See <a
- * href="https://developers.google.com/maps/documentation/directions/intro#TransitDetails">Transit
+ * <p>
+ * See <a href=
+ * "https://developers.google.com/maps/documentation/directions/intro#TransitDetails">Transit
  * Details</a> for more detail.
  */
 public class TransitAgency implements Serializable {
 
-  private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-  /** The name of the transit agency. */
-  public String name;
+	/** The name of the transit agency. */
+	public String name;
 
-  /** The URL for the transit agency. */
-  public String url;
+	/** The URL for the transit agency. */
+	public String url;
 
-  /** The phone number of the transit agency. */
-  public String phone;
+	/** The phone number of the transit agency. */
+	public String phone;
 }

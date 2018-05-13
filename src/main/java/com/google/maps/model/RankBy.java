@@ -19,22 +19,21 @@ import com.google.maps.internal.StringJoin;
 
 /** Used by the Places API to specify the order in which results are listed. */
 public enum RankBy implements StringJoin.UrlValue {
-  PROMINENCE("prominence"),
-  DISTANCE("distance");
+	PROMINENCE("prominence"), DISTANCE("distance");
 
-  private final String ranking;
+	private final String ranking;
 
-  RankBy(String ranking) {
-    this.ranking = ranking;
-  }
+	RankBy(String ranking) {
+		this.ranking = ranking;
+	}
 
-  @Override
-  public String toString() {
-    return ranking;
-  }
+	@Override
+	public String toString() {
+		return ranking;
+	}
 
-  @Override
-  public String toUrlValue() {
-    return ranking;
-  }
+	@Override
+	public String toUrlValue() {
+		return ranking;
+	}
 }
